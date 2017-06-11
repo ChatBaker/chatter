@@ -1,0 +1,23 @@
+<%= form_with(model: chat, local: true,url: choose_new_or_edit) do |form| %>
+  <% if chat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= chat.errors.count%> 件のエラーが発生してるよ</h2>
+
+      <ul>
+      <% chat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :つぶやく %>
+    <p>１４０字までオーケー</p>
+    <%= form.text_area :content, id: :chat_content %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit'Go!',class: 'btn btn-default btn-sm btn-success'%>
+  </div>
+<% end %>

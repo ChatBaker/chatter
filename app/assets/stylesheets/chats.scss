@@ -1,0 +1,63 @@
+// Place all the styles related to the Chats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+  width: 100%;
+  background-color: #E0245E;
+  height: 54px;
+}
+
+header ul {
+  margin: 0 auto;
+  list-style: none;
+}
+
+header ul a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+}
+
+header li {
+  float: left;
+  width: auto;
+}
+
+.row{
+
+  border: 1px outset #666666;
+  margin: 5px;
+}
+.row2{
+ float: right;
+}
+
+body{
+  background-image: url(images/chatter_main.jpg);
+}
+
+
+
+footer {
+  width: 100%;
+  background-color:#E0245E;
+  padding: 20px 0 10px 0;
+  color: white;
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+  background-color:#F5F8FA;
+}

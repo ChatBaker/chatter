@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>内容:</strong>
+  <%= @chat.content %>
+</p>
+
+<%= link_to '編集', edit_chat_path(@chat),class: 'btn btn-default btn-sm btn-success' %>
+<br>
+<%= link_to 'トップページ', root_path %>

@@ -1,0 +1,12 @@
+<h3>以下の内容で、送信する。</h3>
+
+<%= form_for(@chat) do |f| %>
+  <%= f.hidden_field :content %>
+
+  <p>本文:<%= @chat.content %></p>
+  <%= f.submit "登録する",class: 'btn btn-default btn-sm btn-success'%>
+<% end %>
+<%= form_for(@chat, url: new_chat_path, method: 'get') do |f| %>
+  <%= f.hidden_field :content %>
+  <%= f.submit "もどる", name: 'back',class: 'btn btn-default' %>
+<% end %>
