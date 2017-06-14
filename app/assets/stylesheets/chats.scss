@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 header {
   width: 100%;
-  background-color: #E0245E;
   height: 54px;
+  background:rgba(0,0,0,0.1);
 }
 
 header ul {
@@ -17,33 +17,42 @@ header ul a {
   padding: 15px;
   text-decoration: none;
   color: white;
-  background-color: #000000;
 }
 
 header li {
   float: left;
   width: auto;
 }
+.navbar-right{
+display: block;
+text-decoration: none;
+color: white;
+padding-right: 30px;
+}
 
 .row{
 
   border: 1px outset #666666;
   margin: 5px;
+  background-color: rgba(770,237,232,0.9);
 }
 .row2{
  float: right;
 }
+body{
+  background-image: url("mike.jpg")
+
+}
 
 footer {
   width: 100%;
-  background-color:#E0245E;
   padding: 20px 0 10px 0;
-  color: white;
   margin: auto;
   padding-bottom: 10px;
   font-size: 12px;
   position: absolute;
   bottom: 0;
+  background:rgba(0,0,0,0.1);
 }
 
 html {
@@ -53,5 +62,7 @@ html {
 
 body {
   text-align: center;
-  background-color:#F5F8FA;
+  font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    background-size: cover;
 }

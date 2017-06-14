@@ -4,20 +4,6 @@
 <h1>twitter</h1>
 </section>
 <%= render 'form', chat: @chat %>
-  <div class="container">
-  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
-    <h1>つぶやき一覧</h1>
-    <% @chats.each do |chat| %>
-    <div class="row">
-      <%= chat.content %>
-      <div class="row2">
-      <%= link_to "編集", edit_chat_path(chat), class: 'btn btn-default btn-sm btn-success' %>
-      <%= link_to "削除",chat, method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn btn-danger' %>
-     </div>
-    </div>
-    <% end %>
-  </div>
-</div>
-
+  
 <!--<br>
 <%= link_to '戻る', chats_path ,class:'btn btn-default btn-sm btn-success'%>

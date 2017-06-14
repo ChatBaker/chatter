@@ -4,7 +4,6 @@ class ChatsController < ApplicationController
   # GET /chats
   # GET /chats.json
   def index
-    redirect_to root_url
     @chats = Chat.all
   end
 
